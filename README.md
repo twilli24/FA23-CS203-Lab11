@@ -6,13 +6,17 @@
 
 ####    This lab will incorporate file IO, encryption, decryption, and using GitHub!
 
-Included in `src` is a file `encrypted.txt` the goal is to decrypt this text file 
-and push your code and the decrypted text to canvas. 
+Included in `src` is two files `encrypted.txt` && `encryptMe.txt` the goal 
+is to decrypt the former and encrypt the latter text file 
+and push your code/files  to canvas. 
 
-The file is encrypted with a **caesar cipher**, please Google what this is if you do not understand how it is working. 
-**The file is shifted >1 && <10 times.**
+The file is encrypted with a **caesar cipher**, please Google what 
+this is if you do not understand how it is working.
+`encrypted.txt` **is shifted >1 && <10 times. Encrypt** `encryptMe.txt`
+**With the same amount of shift**
 
-There is already a scaffold to get you started.
+There is already a scaffold to help you start coding, but please feel free
+to add any helper functions you would like!
 
 ## Here are some steps to get you started
 ### Prerequisites
@@ -57,7 +61,7 @@ where "url you just copied" (without the quotation marks) is the url to this rep
 
 
 - Read `encryptMe.txt`
-- Encrypt it with a shift of 8
+- Encrypt it with the same amount of shift as `encrypted.txt`
 - Write to a new file, _it must be named_ `newEncrypted.txt`
 
 
@@ -65,6 +69,12 @@ where "url you just copied" (without the quotation marks) is the url to this rep
 - Upload a link to your repository to canvas!
 
 ### Good luck!
+
+## Tips:
+- You made want to comment out the method calls to encrypt and decrypt as you fill out those functions
+- Decrypting is the same an encrypting, but backwards
+- You will need to do some type casting
+- Ceaser's cipher should only apply to letters, uppercase and lowercase. Not special characters or spaces
 
 # References
 
