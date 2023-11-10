@@ -41,16 +41,16 @@ public class Encrypter {
 		// TODO: Call the read method, encrypt the file contents, and then write to new
 		// file
 		String alphabet = "abcdefghijklmnopqrstuvwxyz";
-
+		String encryptStr = "";
 		readFile(inputFilePath);
 		shift = 3;
 		for (int i = 0; i < inputFilePath.length(); i++) {
 			int pos = alphabet.indexOf(inputFilePath.charAt(i));
 			int encryptPos = (shift + pos) % 26;
 			char encryptChar = alphabet.charAt(encryptPos);
-			encrypted += encryptChar;
+			encryptStr += encryptChar;
 		}
-		writeFile(encrypted, encryptedFilePath);
+		writeFile(encryptStr, encryptedFilePath);
 	}
 
 	/**
@@ -111,7 +111,6 @@ public class Encrypter {
 	private static void writeFile(String data, String filePath) {
 		// TODO: Write to filePath
 		try (PrintWriter output = new PrintWriter(filePath)) {
-			
 			output.print(data);
 			output.close();
 		} catch (Exception e) {
